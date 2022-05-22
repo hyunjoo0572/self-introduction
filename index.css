@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Open+Sans:wght@400;600;700&display=swap');
+
+*{
+    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin:0px;
+    padding:0px;
+    color:black;
+}
+
+.header{
+    width:80%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .title h1{
+    font-size:80px;
+}
+.nav{
+    display:flex;
+    justify-content: flex-end;
+}
+.nav > li{
+    font-size:20px;
+    margin-left:30px;
+}
+.nav>li>a:hover{
+    color:rgb(0, 221, 255);
+}
+.section input[id*="slide"] {
+    display:none;
+}
+.section .slidewrap {
+   max-width:1200px;margin:0 auto;overflow:hidden; 
+}
+.section .slidelist {
+   white-space:nowrap;font-size:0;
+}
+.section .slidelist > li {
+   display:inline-block;vertical-align:middle;width:100%;transition:all .5s;;
+}
+.section .slidelist > li > a {
+   display:block; position: relative;  
+}
+.section .slidelist > li > a img {
+   width:100%; height: 90vh;
+}
+.section .slidelist label {
+   position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;
+}
+.section .slidelist .left {
+   left:30px;background:url('image/1608508_angle_left_icon.png') center center / 100% no-repeat;
+}
+.section .slidelist .right {
+   right:30px;background:url('image/1608509_angle_right_icon.png') center center / 100% no-repeat;
+}
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {
+   transform:translateX(0%);
+}
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {
+   transform:translateX(-100%);
+}
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {
+   transform:translateX(-200%);
+}
+.about{
+    width:80%;
+    margin:auto;
+    margin-top: 10%;
+  }
+.about .about_section{
+    display: flex;
+    justify-content: space-around;
+    margin-top:5%;
+}
+.about h2{
+    font-size:50px;
+    line-height: 300%;
+    
+}
+.about .about_hj{
+    text-align: center;
+    line-height: 200%;
+}
+.about .about_hj h3{
+    font-size:45px;
+    line-height: 200%;
+}
+.about .about_hj h4{
+    font-size:30px;
+    line-height: 200%;
+}
+.about .about_section .about_profile{
+    font-size:25px;
+    line-height:200%;
+}
+.about .about_section .about_profile span{
+    font-size:20px;
+    color:rgb(53, 192, 227);
+}
+.skills{
+    width:80%;
+    margin:60px auto;
+    color:black;
+    margin-top:10%;
+}
+.skills  h2{
+    font-size:50px;
+    margin-bottom:5%;
+
+}
+.skills  li{
+    margin:20px 0;
+}
+.skills h3{
+    font-size:25px;
+}
+.bar{
+    background:#353b48;
+    display:block;
+    height:5px;
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius:3px;
+    overflow:hidden;
+    box-shadow: 0 0 10px rgb(122, 205, 233);
+}
+.bar  span {
+    height:5px;
+    float:left;
+    background:rgb(24, 195, 242);
+}
+.html{
+    width:85%;
+    animation: html 2s;
+}
+.css{
+    width:70%;
+    animation: css 2s;
+}
+.javascript{
+    width:5%;
+    animation: javascript 2s;
+}
+@keyframes html{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:85%;
+    }
+}
+@keyframes css{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:70%;
+    }
+}
+@keyframes  javascript{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:5%;
+    }
+}
+.likes{
+    width:80%;
+    height:800px;
+    margin:auto;
+    margin-top:10%;
+    background-image:url(image/IMG_3101.JPG); 
+    background-size:cover;
+}
+.likes .likes_contents{
+    color:white;
+    line-height:200%;
+    margin-left:100px;
+}
+.likes h2{
+    font-size:50px;
+    color:white;
+    line-height:200%;
+}
+.likes .likes_contents p{
+    font-size:30px;
+    color:white;
+    line-height: 200%;
+}
+.contact{
+    width:80%;
+    margin:auto;
+    margin-top:10%;   
+}
+
+.contact h2{
+    font-size:50px;
+}
+.contact_contents p{
+    font-size:25px;
+    line-height: 200%;
+}
+.contact_contents{
+    margin-top:5%;
+    margin-left:50px;
+}
+.footer{
+    text-align:right;
+    margin-top:50px;
+    margin-bottom:50px;
+}
